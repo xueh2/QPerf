@@ -8,6 +8,6 @@ The Blood-tissue-exchange model (BTEX [1](by Prof. James Bassingthwaighte, https
 
 BTEX model (20 version) solves two partial differential equations for myocardial blood flow (MBF, ml/min/g), permeability-surface-area product (PS, ml/min/g), blood volume (V_b, ml/g) and interstitial volume (V_isf, ml/g).
 
-
+![BTEX QPerf](./images/BTEX_pixel_size_mapping.JPG "Pixel-wise BTEX flow mapping for perfusion")
 
 To perform perfusion fitting and estimate 
