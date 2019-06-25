@@ -12,61 +12,27 @@ BTEX model (20 version) solves two partial differential equations for myocardial
 
 To perform perfusion fitting, two inputs are needed: Cin and y. Cin is the input function for myocardium (e.g. arterial input function, AIF, measured from dual-sequence perfusion imaging) and y is the myocardial signal. Both Cin and y should be converted to Gd concentration unit (mmol/L) or have the same scale to the Gd concentration. Otherwise, the estimated flow will be off by a scaling factor.
 
-The software is split into two function calls:
+The QPerf mapping is provided as a function call:
 
 ```
-Matlab_gt_BTEX20_model 
+Matlab_gt_QPerf_mapping
 ==============================================================================================
-Usage: Matlab_gt_BTEX20_model 
-Compute BTEX20 model
+Usage: Matlab_gt_QPerf_mapping 
+Perform gadgetron perfusion flow map estimation
 ---------------------------------------------------------------------
-11 Input paras:
-	cin                                        : AIF in [Gd], N*1, input function, in float
-	tspan                                      : time to evaluate model, in seconds
-	xmesh                                      : localtion to evaluate model, in cm
-	Fp                                         : plasma flow, can be a vector, ml/min/g
-	Vp                                         : plasma volume, can be a vector, ml/g
-	PS                                         : Permeability-surface area product, can be a vector, ml/min/g
-	Visf                                       : Interstitium volume, can be a vector, ml/g
-	Gp                                         : scalar, ml/min/g
-	Gisf                                       : scalar, ml/min/g
-	Dp                                         : scalar, cm^2/sec
-	Disf                                       : scalar, cm^2/sec
-4 Output para:
-	sol                                        : [nt nx neq], solution of BTEX20 model
-	C_e                                        : Concentration of interstium
-	C_p                                        : Concentration of plasma
-	Q_e                                        : [Gd] residual curve
+7 Input paras:
+	cin                                   : N*1, input function, whole range aif with baseline, in float
+	y                                     : RO*E1*N, response function array, in float
+	y_mask                                : RO*E1, if not empty, mask for background, background is 0 and foreground is >0, in float
+	foot                                  : foot index in cin
+	peak                                  : peak index in cin
+	deltaT                                : time tick in ms for every data point
+	hematocrit                            : the hematocrit, e.g. 0.42
+1 Output para:
+	flow_maps                             : flow maps in ml/min/g
 ==============================================================================================
 ```
-This function will compute BTEX look-up-table (LUT) on given parameter grid for (Fp, PS, Vp, Visf). Usually the Gd diffusion parameters are fixed, but user can choose to play with them as well.
-
-The second function call will perform the BTEX fitting, given the input Cin and y and pre-computed LUT:
-
-```
-Matlab_gt_BTEX_fitting
-==============================================================================================
-Usage: Matlab_gt_BTEX_fitting 
-Perform gadgetron btex fitting
----------------------------------------------------------------------
-12 Input paras:
-	cin                                        : N*1, input function, in double
-	y                                          : N*M, response function, in double
-	deltaT                                     : sample interval of cin and y, in seconds (default, 0.5s)
-	max_iter_BTEX20                            
-	max_func_eval_BTEX20                       
-	local_search_BTEX20                        
-	Q_e                                        : BTEX 20 look up table
-	Fp                                         : BTEX 20 Fp array
-	PS                                         : BTEX 20 PS array
-	Vp                                         : BTEX 20 Vp array
-	Visf                                       : BTEX 20 Visf array
-	max_shift                                  : max shift range to search, in seconds
-2 Output para:
-	res_BTEX20                                 : results for BTEX20, [Fp, PS, Vp, Visf]
-	y_BTEX20                                   : model output for BTEX20
-==============================================================================================
-```
+This function will compute BTEX look-up-table (LUT) and perform pixel-wise mapping.
 
 The **examples** folder has running example file to demonstrate the usage of these commands.
 
