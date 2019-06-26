@@ -15,30 +15,29 @@ To perform perfusion fitting, two inputs are needed: Cin and y. Cin is the input
 The QPerf mapping is provided as a function call:
 
 ```
-Matlab_gt_QPerf_mapping
-==============================================================================================
-Usage: Matlab_gt_QPerf_mapping 
-Perform gadgetron perfusion flow map estimation
----------------------------------------------------------------------
-7 Input paras:
-	cin                                   : N*1, input function, whole range aif with baseline, in float
-	y                                     : RO*E1*N, response function array, in float
-	y_mask                                : RO*E1, if not empty, mask for background, background is 0 and foreground is >0, in float
-	foot                                  : foot index in cin
-	peak                                  : peak index in cin
-	deltaT                                : time tick in ms for every data point
-	hematocrit                            : the hematocrit, e.g. 0.42
-1 Output para:
-	flow_maps                             : flow maps in ml/min/g
-==============================================================================================
+gadgetron_QPerf_mapping -h
+Allowed options:
+  -h [ --help ]                         Produce HELP message
+  -f [ --cin_file ] arg (=cin_file)     <AIF signal, [N 1]>
+  -i [ --y_file ] arg (=perf_file)      <input perfusion Gd images, [RO E1 N]>
+  -m [ --fmap_file ] arg (=MBF)         <output flow map, [RO E1]>
+  --foot arg (=0)                       <foot for aif signal>
+  --peak arg (=0)                       <peal for aif signal>
+  --dt arg (=500)                       <sampling interval in ms, e.g. 500ms>
+  --hematocrit arg (=0.41999999999999998)
+                                        <hematocrit, default 0.42>
 ```
 This function will compute BTEX look-up-table (LUT) and perform pixel-wise mapping.
 
 The **examples** folder has running example file to demonstrate the usage of these commands.
 
-To install the software, clone this repo and add **%BASE_DIR%/QPerf/software** to your matlab path, suppose the repo was cloned to **%BASE_DIR**.
+To install the software, clone this repo and add **%BASE_DIR%/QPerf/software** to your path, suppose the repo was cloned to **%BASE_DIR**.
 
-Current version of software was tested in windows 10 with Matlab R2013b to R2017b.
+Current version of software was tested in windows 10.
+
+An example of perfusion AIF and imaging data are provided in the examples folder. 
+![AIF](./images/aif.jpg "AIF")
+![Flow map](./images/MBF.jpg "MBF")
 
 For more comments and suggestions, please contact me at :
 
