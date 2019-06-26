@@ -1,5 +1,7 @@
 # QPerf: Automatic In-line Quantitative Myocardial Perfusion Mapping
 
+![HCM](./images/HCM_Example.jpg "HCM MBF maps")
+
 Quantitative perfusion (QPerf) is an emerging technique to directly measure blood supply to the myocardial mussel. It is demonstrating potential to be a valid clinical tool for ischemia and many non-ischemic cardiac disease. 
 
 This repo contains the cardiac flow mapping tool we developed, in supplement to our paper submitted to [Magnetic Resonance in Medicine](https://onlinelibrary.wiley.com/journal/15222594), titled "Automatic In-line Quantitative Myocardial Perfusion Mapping: processing algorithm and implementation". This paper is currently under review.
