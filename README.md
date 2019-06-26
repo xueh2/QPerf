@@ -36,8 +36,14 @@ To install the software, clone this repo and add **%BASE_DIR%/QPerf/software** t
 Current version of software was tested in windows 10.
 
 An example of perfusion AIF and imaging data are provided in the examples folder. 
-![AIF](./images/aif.jpg "AIF")
-![Flow map](./images/MBF.jpg "MBF")
+
+<p align="center">
+<img src="./images/aif.jpg">  
+</p>
+
+<p align="center">
+<img src="./images/MBF.jpg">  
+</p>
 
 For more comments and suggestions, please contact me at :
 
