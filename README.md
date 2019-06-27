@@ -36,11 +36,11 @@ Current version of software was tested in windows 10.
 An example of perfusion AIF and imaging data are provided in the examples folder. 
 
 <p align="center">
-<img src="./images/aif.jpg">  
+<img src="./images/aif_stress.jpg">  
 </p>
 
 <p align="center">
-<img src="./images/MBF.jpg">  
+<img src="./images/fmap_stress.jpg">  
 </p>
 
 For more comments and suggestions, please contact me at :
