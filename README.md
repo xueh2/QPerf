@@ -1,6 +1,6 @@
 # QPerf: Automatic In-line Quantitative Myocardial Perfusion Mapping
 
-Quantitative perfusion (QPerf) is an emerging technique to directly measure blood supply to the myocardial mussel. It is demonstrating potential to be a valid clinical tool for ischemia and many non-ischemic cardiac disease. 
+Quantitative perfusion (QPerf) is an emerging technique to directly measure blood supply to the myocardial muscle. It is demonstrating potential to be a valid clinical tool for ischemia and many non-ischemic cardiac disease. 
 
 This repo contains the cardiac flow mapping tool we developed, in supplement to our paper submitted to [Magnetic Resonance in Medicine](https://onlinelibrary.wiley.com/journal/15222594), titled "Automatic In-line Quantitative Myocardial Perfusion Mapping: processing algorithm and implementation". This paper is currently under review.
 
@@ -22,10 +22,8 @@ Allowed options:
   -i [ --y_file ] arg (=perf_file)      <input perfusion Gd images, [RO E1 N]>
   -m [ --fmap_file ] arg (=MBF)         <output flow map, [RO E1]>
   --foot arg (=0)                       <foot for aif signal>
-  --peak arg (=0)                       <peal for aif signal>
   --dt arg (=500)                       <sampling interval in ms, e.g. 500ms>
-  --hematocrit arg (=0.41999999999999998)
-                                        <hematocrit, default 0.42>
+  --hematocrit arg (=0.42)              <hematocrit, default 0.42>
 ```
 This function will compute BTEX look-up-table (LUT) and perform pixel-wise mapping.
 
