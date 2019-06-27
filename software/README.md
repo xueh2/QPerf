@@ -2,4 +2,4 @@
 
 [QPerf](https://gadgetrondata.blob.core.windows.net/gadgetrongithubio/files/QPerf/QPerf.zip)
 
-Please unzip the package to a local directory.
+Please unzip the package to QPerf/software directory.
