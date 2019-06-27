@@ -7,16 +7,16 @@ close all
 
 cd .\QPerf\examples
 
-load perf_data
+load perf_data_stress
 
-command = ['gadgetron_QPerf_mapping -f ./aif -i ./data -m ./MBF --foot ' num2str(foot) ' --peak ' num2str(peak) ' --dt 500'];
+command = ['gadgetron_QPerf_mapping -f ./aif_stress -i ./data_stress -m ./MBF_stress --foot ' num2str(foot) ' --dt 500'];
 dos(command);
 
 % load and visualize map
-fmap = analyze75read('MBF');
+fmap = analyze75read('MBF_stress');
 
 figure; 
 plot(aif);
 title('AIF');
 
-figure; imshow(fmap, 'DisplayRange', [0 8]);PerfColorMap;
+figure; imshow(fmap, 'DisplayRange', [0 6]);PerfColorMap;
