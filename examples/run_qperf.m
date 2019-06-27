@@ -3,13 +3,16 @@
 clear all
 close all
 
-% load the stored AIF signal
+% suppose the QPerf repo was cloned to QPerf directory
+% git clone ...
+
+% load the stored data
 
 cd .\QPerf\examples
 
 load perf_data_stress
 
-command = ['gadgetron_QPerf_mapping -f ./aif_stress -i ./data_stress -m ./MBF_stress --foot ' num2str(foot) ' --dt 500'];
+command = ['../software/QPerf/gadgetron_QPerf_mapping -f ./aif_stress -i ./data_stress -m ./MBF_stress --foot ' num2str(foot) ' --dt 500'];
 dos(command);
 
 % load and visualize map
