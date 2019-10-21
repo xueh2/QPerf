@@ -1,6 +1,8 @@
-# QPerf: Automatic In-line Quantitative Myocardial Perfusion Mapping
+# QPerf: Collected development for Automatic In-line Quantitative Myocardial Perfusion Mapping
 
 Quantitative perfusion (QPerf) is an emerging technique to directly measure blood supply to the myocardial muscle. It is demonstrating potential to be a valid clinical tool for ischemia and many non-ischemic cardiac disease. 
+
+This repo collects tools we developed for QPerf.
 
 ## Perfusion Flow mapping
 
@@ -49,8 +51,7 @@ An example of perfusion AIF and imaging data are provided in the examples folder
 
 The second part of work shared through this repo is our deep learning model used to detection LV for perfusion arterial input function (AIF) signal extraction. This work had been submitted to [Magnetic Resonance in Medicine](https://onlinelibrary.wiley.com/journal/15222594) and currently under review.
 
-The deep neural net models can be found at model folder. 
-
+The deep neural net models can be found at deep_learning/aif_detection folder. The used ResUNet model and example datasets are shared.
 
 ------------------------------------------------------------------------------------------------
 
