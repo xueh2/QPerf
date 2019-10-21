@@ -2,7 +2,9 @@
 
 Quantitative perfusion (QPerf) is an emerging technique to directly measure blood supply to the myocardial muscle. It is demonstrating potential to be a valid clinical tool for ischemia and many non-ischemic cardiac disease. 
 
-This repo contains the cardiac flow mapping tool we developed, in supplement to our paper submitted to [Magnetic Resonance in Medicine](https://onlinelibrary.wiley.com/journal/15222594), titled "Automatic In-line Quantitative Myocardial Perfusion Mapping: processing algorithm and implementation". This paper is currently under review.
+## Perfusion Flow mapping
+
+This repo contains the cardiac flow mapping tool we developed, in supplement to our paper published at [Magnetic Resonance in Medicine](https://onlinelibrary.wiley.com/journal/15222594), titled "Automatic In-line Quantitative Myocardial Perfusion Mapping: processing algorithm and implementation". This paper is can be found [here](https://onlinelibrary.wiley.com/doi/full/10.1002/mrm.27954).
 
 The Blood-tissue-exchange model (BTEX [1](by Prof. James Bassingthwaighte, https://www.physiome.org/)) is used in this study for quantitative perfusion. For fully disclosure, there are many different models proposed in past two decades [2](https://www.ncbi.nlm.nih.gov/pubmed/22173205). 
 
@@ -42,6 +44,15 @@ An example of perfusion AIF and imaging data are provided in the examples folder
 <p align="center">
 <img src="./images/fmap_stress.jpg">  
 </p>
+
+## Perfusion AIF LV detection using Deep Learning
+
+The second part of work shared through this repo is our deep learning model used to detection LV for perfusion arterial input function (AIF) signal extraction. This work had been submitted to [Magnetic Resonance in Medicine](https://onlinelibrary.wiley.com/journal/15222594) and currently under review.
+
+The deep neural net models can be found at model folder. 
+
+
+------------------------------------------------------------------------------------------------
 
 For more comments and suggestions, please contact me at :
 
