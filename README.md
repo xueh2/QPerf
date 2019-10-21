@@ -54,7 +54,7 @@ The second part of work shared through this repo is our deep learning model used
 The deep neural net models can be found at deep_learning/aif_detection folder. The used ResUNet model and example datasets are shared.
 
 <p align="center">
-<img src="./images/figure3-havsmkyxjpg">  
+<img src="./images/Figure3.jpg">  
 </p>
 
 ------------------------------------------------------------------------------------------------
