@@ -57,6 +57,16 @@ The deep neural net models can be found at deep_learning/aif_detection folder. T
 <img src="./images/Figure3.jpg">  
 </p>
 
+## Perfusion mapping analysis using Deep Learning
+
+This part of work is to train a deep learning based neural network to segment perfusion flow maps and generate AHA report on the MR scanner. With previous two papers, the "click-button" solution for autoamted inline perfusion flow mapping is achieved as a compelte clinical applications. This work is submitted to .[Journal of Cardiovascular Magnetic Resonance](https://jcmr-online.biomedcentral.com/) and is under review.
+
+The deep neural network models can be found at deep_learning/analysis folder. 
+
+<p align="center">
+<img src="./images/FigurePerfAnalysis.jpg">  
+</p>
+
 ------------------------------------------------------------------------------------------------
 
 For more comments and suggestions, please contact me at :
