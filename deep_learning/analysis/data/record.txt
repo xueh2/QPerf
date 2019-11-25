@@ -1,0 +1,11 @@
+1.
+
+T:\RawData\MachinLearning_Labelled_data\Perf_SAX_SEG_Set2\LEEDS\Perfusion_AIFR3_2E_Interleaved_66097_7147686_7147694_42_20190116-084608
+
+2.
+
+T:\RawData\MachinLearning_Labelled_data\Perf_SAX_SEG_Set2\CHENIESMEWS\Perfusion_AIFR3_2E_Interleaved_166032_49041989_49041996_153_20181217-114027
+
+3.
+
+T:\RawData\MachinLearning_Labelled_data\Perf_SAX_SEG_Set2\ROYALFREE\Perfusion_AIFR3_2E_Interleaved_42363_63869578_63869583_3000002_20190114-203353
