@@ -57,7 +57,7 @@ The deep neural net models can be found at deep_learning/aif_detection folder. T
 <img src="./images/Figure3.jpg">  
 </p>
 
-We also shared N=1,500 AIF samples at [gadgetron open data house](https://gadgetrondata.blob.core.windows.net/open-shared-datasets/AIF_share_20200229.zip).
+We also shared N=1,500 AIF samples at [gadgetron open data house](https://gadgetrondata.blob.core.windows.net/open-shared-datasets/AIF_share_20200325.zip). All AIF signals had been resampled to 0.5s regular temporal grid. The file suffix "R" and "S" indicates this AIF signal is from a rest or stress acquisition.
 
 ## Perfusion mapping analysis using Deep Learning
 
